@@ -1,0 +1,6 @@
+osc(70,-0.01,1.2)
+  .kaleid(4)
+  .posterize(3,1)
+  .scale(
+  5,1,()=>a.fft[0]/10+window.innerWidth/window.innerHeight)
+  .out(o0)
