@@ -1,0 +1,1 @@
+osc(150,0.0,3.3).modulate(o0).blend(o0,0.9).modulate(voronoi(8,0).luma(()=>0.1+a.fft[0]*2,1)).out()
