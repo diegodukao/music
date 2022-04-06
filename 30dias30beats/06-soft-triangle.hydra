@@ -1,0 +1,9 @@
+osc(10,-0.15,1)
+	.kaleid(3)
+	.color(3,0.9,0.4)
+	.rotate(0, ()=>0.2)
+	.modulate(noise(1.5))
+	.scale(()=>1/ (a.fft[0]*3)+0.01,1,()=>window.innerWidth/window.innerHeight)
+  	.out(o0)
+
+a.setBins(6)
