@@ -1,0 +1,13 @@
+
+s0.initCam()
+
+src(s0)
+  .kaleid(3)
+  .mask(shape(2,()=>a.fft[0],1))
+  .modulateRotate(shape(5,0.3,1))
+  .modulateRotate(shape(5,0.3,0.9))
+  .modulateRotate(shape(5,0.3,0.8))
+  .scale(()=>0.3)
+  .add(shape(4,0.2,1).color(0.1,0.8,0.3))
+  .rotate(()=>time/20)
+  .out()
