@@ -1,0 +1,7 @@
+s0.initCam()
+
+osc(4,0.2,0.4)
+  .modulate(osc(()=>100+a.fft[0],0,1).kaleid(3))
+  .modulate(src(s0),0.05)
+  .modulateKaleid(src(s0))
+  .out(o0)

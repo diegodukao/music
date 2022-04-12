@@ -1,0 +1,15 @@
+s0.initCam();
+voronoi(1)
+	.add(osc(10, 0.1, 1))
+	.color(1, 0.4, 0.5)
+	.modulate(osc(3, 0, 0.2)
+		.rotate(0.1))
+	.mult(osc(1, 0.2, 0.4)
+		.add(shape(6)
+			.scale(1, 0.528, () => 0.2 + fft[0] * 10)
+			.repeat(2)
+			.rotate(0.3, 0.1))
+		.rotate(0.1)
+		.scale(() => 1 + a.fft[0] / 2))
+	.modulateRotate(src(s0))
+	.out();
