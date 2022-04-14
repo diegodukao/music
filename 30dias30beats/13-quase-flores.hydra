@@ -1,0 +1,7 @@
+shape(() => Math.sin(time/2)+1*2)
+.repeatX(3)
+.repeatY(()=>Math.sin(time/2)+1*3)
+.blend(src(o0).color(1,0,0.6))
+.modulate(noise(5))
+.kaleid(3)
+ .out()
