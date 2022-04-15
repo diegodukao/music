@@ -1,0 +1,9 @@
+s0.initCam()
+
+src(s0)
+.modulate(osc(3,0.2,1)).kaleid(21)
+.out(o1)
+
+src(o1).mult(osc(4,1,1),0.1).modulateRotate(o1,1)
+.scale(1,1,()=>(window.innerWidth)/window.innerHeight)
+  .out(o0)
