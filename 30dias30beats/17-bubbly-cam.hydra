@@ -1,0 +1,6 @@
+s0.initCam()
+
+src(s0).modulate(osc(10,0.08).rotate(Math.PI2))
+.modulateScale(noise(3.5,0.25).modulateScale(osc(15).rotate(()=>Math.sin(time/2))),0.6)
+	.color(1,0.5,0.4).contrast(1.4)
+  .out()
