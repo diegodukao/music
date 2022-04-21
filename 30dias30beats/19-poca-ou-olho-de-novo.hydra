@@ -1,0 +1,7 @@
+osc(89,0,0.6)
+  .modulateRotate(noise(90).modulateRotate(voronoi(250)))
+  .posterize(2,1)
+  .color(0.2,0.7,0.9)
+  .scale(
+  5,1,()=>a.fft[0]/40+window.innerWidth/window.innerHeight)
+  .out(o0)

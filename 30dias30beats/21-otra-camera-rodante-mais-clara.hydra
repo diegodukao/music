@@ -1,0 +1,8 @@
+s0.initCam()
+
+src(s0).modulate(voronoi(()=>1 + a.fft[0],0.1,1))
+.color(0.8,0.5,0.4)
+.rotate(1,0.1,-2).mask(shape(20,1))
+.modulate(o0)
+.scale(1,1,()=>(window.innerWidth)/window.innerHeight)
+.out(o0)
