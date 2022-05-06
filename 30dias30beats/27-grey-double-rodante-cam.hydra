@@ -1,0 +1,6 @@
+// licensed with CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// Based on https://hydra.ojack.xyz/?sketch_id=example_4
+
+s0.initCam()
+
+osc(10,-0.1, 0).color(-1, -1, -1).blend(o0).rotate(-0.1, -0.1).modulate(src(s0).rotate(0.3, 0.3).scale(1.5).modulate(o0, 0.0005).repeatY(2, 2)).out(o0)

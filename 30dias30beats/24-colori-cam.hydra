@@ -1,0 +1,10 @@
+
+s0.initCam()
+src(s0).mult(osc(2,0.1,()=>Math.sin(time)*3).kaleid(10))
+.modulate(o0,0.5)
+.scale(0.99,1, ()=>window.innerWidth/window.innerHeight)
+.out()
+
+
+speed = 0.1
+

@@ -1,0 +1,12 @@
+// licensed with CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// based on https://hydra.ojack.xyz/?sketch_id=2hoBl9icGc96KLfb
+
+s0.initCam()
+src(s0)
+  .modulate(voronoi(4,0))
+  .diff(osc(3,0.2,0.6))
+  .modulateRotate(noise(0.1))
+  .scale(.2)
+  .invert()
+  .luma([0,1/2].smooth())
+  .out()

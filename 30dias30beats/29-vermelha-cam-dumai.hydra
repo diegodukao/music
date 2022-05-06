@@ -1,0 +1,5 @@
+s0.initCam()
+
+src(s0).color(0.9,0.2,0.3).modulate(voronoi(),.1).modulateKaleid(s0,6)
+  .scale(2,1,()=>window.innerWidth/window.innerHeight)
+.out()

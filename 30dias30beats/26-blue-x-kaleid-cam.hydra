@@ -1,0 +1,8 @@
+s0.initCam()
+
+osc(10,0.1).kaleid(2).modulateKaleid(shape(3).kaleid(2))
+.color(0.1,0.5,0.8)
+.add(src(s0), ()=>Math.cos(time)/10)
+.mult(src(s0), 0.8)
+.add(src(o0).rotate(0, -0.1), 0.2)
+.out()

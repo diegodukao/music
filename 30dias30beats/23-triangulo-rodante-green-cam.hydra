@@ -1,0 +1,9 @@
+s0.initCam()
+
+shape(3, (0.1, ()=> 0.2 + a.fft[2]),1).rotate(0, 0.1)
+.mult(osc(1, 1).modulate(src(s0),3))
+.color(1,2,1)
+.luma(1.2,0.05, (5, ()=> 2 + a.fft[0]))
+.scale(0.6, ()=> 0.9 + a.fft[3], ()=>(window.innerWidth)/window.innerHeight)
+.diff(o0)// o0
+.out(o0)// o1
