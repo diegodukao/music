@@ -1,0 +1,8 @@
+osc(10,0.05,0.2).colorama(3).kaleid(5).modulateRotate(osc(20)).out()
+
+
+osc(10,0.08,0.7).colorama(0.001).kaleid(3).blend(shape(3,0.2).modulate(osc(100,0.1,2)).rotate(1,0.1)).out()
+
+
+s0.initCam()
+osc(10,0.08,0.7).colorama(0.001).kaleid(3).blend(shape(3,0.2).add(src(s0)).modulate(osc(10,0.1,2)).rotate(1,0.1)).out()
