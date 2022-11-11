@@ -1,3 +1,5 @@
+d1 >> play("x")
+
 Root.default = "c#"
 Root.default -= 7
 Clock.bpm = 120
@@ -364,4 +366,3 @@ b1 >> bass(
     sus=P[1.5,0.5, 0.5, 0.5, 1,   0.7, 0.7, 0.4, 1, 0.4, 0.4],
     lpf=800, amp=0.45)
 ~s1 >> play("#", dur=1, pan=0.6, amplify=var([1,0], dur=[1,2]), room=1, mix=0.5)
-
