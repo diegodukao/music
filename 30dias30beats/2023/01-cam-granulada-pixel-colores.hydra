@@ -1,0 +1,21 @@
+s0.initCam()
+
+//create a white square grid
+solid(1,1,1,1)
+.mult(
+shape(4,0.05,()=>0.05+a.fft[0]) //row, column, size of each square
+.repeat(10, 10)
+.modulate(voronoi(50,0.5), 0.1)
+)
+//.add(src(s0))
+.out(o1) //display the result on the canvas
+
+// Type some code on a new line (such as "osc().out()"), and press CTRL+shift+enter
+// variables to control the grid
+osc(1, 0.5, 1)
+	.rotate(1, 0.1)
+	//.pixelate(8, 8)
+	.modulateKaleid(src(o1),10)
+	.mult(src(s0).pixelate(128,128).modulateRotate(src(o1)))
+	//.(src(s0))
+	.out();
