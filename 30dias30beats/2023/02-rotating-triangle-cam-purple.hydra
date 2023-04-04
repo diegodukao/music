@@ -1,0 +1,9 @@
+s0.initCam()
+
+shape(3,1,1)
+  .mult(src(s0).scale(()=>0.5+a.fft[0]/2).color(0.7,0.2,0.6))
+  .mask(shape(3,1,1))
+  .modulateRotate(shape(3,0.2,1).kaleid(4))
+  .scale(0.3)
+  .rotate(()=>time/4)
+  .out()
