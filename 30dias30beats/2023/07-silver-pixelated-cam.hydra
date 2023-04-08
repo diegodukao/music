@@ -1,0 +1,4 @@
+s0.initCam()
+src(s0)
+.modulatePixelate(src(s0),16,2)
+.modulateRotate(osc(1,0.15,1).add(src(s0)),1,-1).out()
